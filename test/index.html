@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop
+ websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns
+ cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers
+ no-applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link href="/page-specific-css/fonts.css" rel="stylesheet">
+    <link async type="text/css" rel="stylesheet" href="/page-specific-css/jquery_jscrollpane_css_2_0_0b11-0.css">
+    <link async href="./public/css/global-68.css" rel="stylesheet">
+    <link async rel="stylesheet" type="text/css" href="/page-specific-css/shadowbox-0.css">
+    <script defer type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/javascripts/modernizr_1_7_min.js"></script>
+    <script defer type="text/javascript" src="/javascripts/jquery_placeholder_1_3.js"></script>
+    <script defer type="text/javascript" src="/javascripts/jquery_mousewheel_3_0_6.js"></script>
+    <script defer type="text/javascript" src="/javascripts/jquery_jscrollpane_min_2_0_0b11-0.js"></script>
+    <script defer src="/javascripts/global-58.js"></script>
+    <title>Darkan - MMORPG</title>
+    <meta name="keywords" content="MMORPG, Darkan, rpg, mmo, RuneScape, Jagex, java">
+    <meta name="description" content="A Runescape remake written in pure Java. Experience the fun of Runescape in 2012!">
+    <link async rel="icon" type="image/vnd.microsoft.icon" href="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/favicon.ico">
+    <link async rel="SHORTCUT ICON" href="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/favicon.ico">
+    <script defer type="text/javascript" src="/javascripts/jquery_elide_1_4.js"></script>
+    <script defer type="text/javascript" src="/javascripts/jagex_form-4.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="Background">
+    <div id="TopBackground">
+        <div id="BottomBackground">
+            {{> Header }}
+            <div id="bannerContainer">
+                <div id="headerMask"></div>
+                <div id="banner">
+                    <a id="bannerPrevious" class="HoverImg" onclick="previousBanner()">
+                        <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/prev-button.webp">
+                    </a>
+                    <div id="bannerReel">
+                        <a><img id="banner1" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/pen7KIN.webp" alt="" title=""></a>
+                        <a><img id="banner2" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/JDvheVV.webp" alt="" title=""></a>
+                        <a><img id="banner3" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/loyalty.webp" alt="" title=""></a>
+                        <a><img id="banner4" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/WyT71yZ.webp" alt="" title=""></a>
+                        <a><img id="banner5" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Es2xH3J.webp" alt="" title=""></a>
+                        <a><img id="banner6" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/NqBtkGF.webp" alt="" title=""></a>
+                        <a><img id="banner7" src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/0aGiFuK.webp" alt="" title=""></a>
+                    </div>
+                    <a id="bannerNext" class="HoverImg" onclick="nextBanner()">
+                        <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/next-button.png?1" alt="" title="">
+                    </a>
+                </div>
+                <div id="bannerBorder"></div>
+            </div>
+
+            <div id="MainContentOuter">
+                <div class="MainContentBg">
+                    <div class="MainContentTopBg">
+                        <div class="MainContentBottomBg">
+                            <div id="MainContent">
+
+                                <div id="leftColumn">
+
+                                    <h3 class="Gradient" id="mainTitle">
+                                        <span class="G0">Latest News</span>
+                                        <span class="G1" aria-hidden="true">Latest News</span>
+                                        <span class="G2" aria-hidden="true">Latest News</span>
+                                        <span class="G3" aria-hidden="true">Latest News</span>
+                                        <span class="G4" aria-hidden="true">Latest News</span>
+                                        <span class="G5" aria-hidden="true">Latest News</span>
+                                        <span class="G6" aria-hidden="true">Latest News</span>
+                                        <span class="mask"><span class="spacing">Latest News</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">Latest News</span></span>
+</span>
+                                        <span class="rightUnderscore">
+<img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/underscore_right.webp" class="right" alt=""><span class="spacing" aria-hidden="true">Latest News</span>
+</span>
+                                        <span class="leftUnderscore"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/underscore_flourish_left.webp" class="left" alt=""></span>
+                                    </h3>
+                                    <!--                                    {{#if isModerator}}-->
+                                    <!--                                        <a href="/edit-news" class="Button Button29"><span><span><span class=""><b>Edit News</b></span></span></span></a>-->
+                                    <!--                                    {{/if}}-->
+                                    <a href="/news/list" class="Button Button29"><span><span><span class=""><b>View All News</b></span></span></span></a>
+<!--                                    {{> news/IndexNewsArticles}}-->
+                                </div>
+                                <div id="rightColumn">
+                                    <div id="social">
+                                        <div id="socialInner">
+                                            <!--                                            <a href="https://web.archive.org/web/20120311002458/http://services.runescape.com/m=news/a=12/latest_news.rss" title="RSS" target="_blank" class="HoverImg NoFade"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/MediumRss.png" alt="RSS"></a>-->
+
+                                            <!--                                            <a href="https://web.archive.org/web/20120311002458/http://www.facebook.com/RuneScape" title="Follow us on Facebook" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/MediumFacebook.png" alt="Facebook"></a>-->
+
+                                            <!--                                            <a href="https://web.archive.org/web/20120311002458/http://twitter.com/RuneScape" title="Follow us on Twitter" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/MediumTwitter.png" alt="Twitter"></a>-->
+
+                                            <!--                                            <a href="https://web.archive.org/web/20120311002458/http://www.youtube.com/RuneScape" title="Follow us on YouTube" target="_blank" class="HoverImg NoFade AddButtons"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/MediumYoutube.png" alt="YouTube"></a>-->
+                                            <!--                                            <div id="bottomNavigationFlag">-->
+
+                                            <!--                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://www.facebook.com/RuneScape" data-send="false" data-layout="button_count" data-width="45" data-show-faces="false" data-colorscheme="dark"><span><iframe id="f11acc60ebfbc93" name="f37be1f0b06d008" scrolling="no" title="Like this content on Facebook." class="fb_ltr" style="border: none; overflow: hidden; height: 21px; width: 90px;" allow="autoplay 'self'; fullscreen 'self'" src="https://web.archive.org/web/20120311002839/http://www.facebook.com/plugins/like.php?api_key=174823375888281&amp;channel_url=https%3A%2F%2Fweb.archive.org%2Fweb%2F20120311002839%2Fhttps%3A%2F%2Fs-static.ak.fbcdn.net%2Fconnect%2Fxd_proxy.php%3Fversion%3D3%23cb%3Df37a3daa2ccf0c2%26origin%3Dhttp%253A%252F%252Fwww.runescape.com%252Ff28a685dd4e0772%26relation%3Dparent.parent%26transport%3Dpostmessage&amp;colorscheme=dark&amp;extended_social_context=false&amp;href=http%3A%2F%2Fwww.facebook.com%2FRuneScape&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=90"></iframe></span></div></div>-->
+                                        </div>
+                                    </div>
+                                    <div id="events">
+                                        <div id="eventsInner">
+
+                                            <h3 class="Gradient">
+                                                <span class="G0">Discord</span>
+                                                <span class="G1" aria-hidden="true">Discord</span>
+                                                <span class="G2" aria-hidden="true">Discord</span>
+                                                <span class="G3" aria-hidden="true">Discord</span>
+                                                <span class="G4" aria-hidden="true">Discord</span>
+                                                <span class="G5" aria-hidden="true">Discord</span>
+                                                <span class="G6" aria-hidden="true">Discord</span>
+                                                <span class="mask"><span class="spacing">Discord</span>
+<span class="middleUnderscore"><span class="spacing" aria-hidden="true">Discord</span></span>
+</span>
+                                                <span class="rightUnderscore">
+<img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/underscore_right.webp" class="right" alt=""><span class="spacing" aria-hidden="true">Discord</span>
+</span>
+                                                <span class="leftUnderscore"><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/underscore_flourish_left.webp" class="left" alt=""></span>
+                                            </h3>
+                                            <div id="eventsContent">
+                                                <!--            <a href="https://web.archive.org/web/20120311002458/http://www.runescape.com/a=12/events.ws" class="Button Button29"><span><span><span class=""><b>View All Events</b></span></span></span></a>-->
+                                                <!--            <div id="eventImage">-->
+                                                <!--                <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/event.jpg" alt="" title="">-->
+                                                <!--            </div>-->
+                                                <iframe src="https://discord.com/widget?id=118102728026095623&theme=dark" width="250" height="600" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{> Footer}}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
