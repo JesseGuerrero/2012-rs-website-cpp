@@ -2,18 +2,20 @@
 #define INDEX_H
 #include <drogon/drogon.h>
 #include "HTTPRequest.hpp"
+
+
+using namespace drogon;
+
 using Callback = std::function<void (const HttpResponsePtr &)> ;
 void handleRoutes() {
-    drogon::app().registerHandler("/hello", [](const HttpRequestPtr& req, Callback &&callback)
+    drogon::app().registerHandler("/", [](const HttpRequestPtr& req, Callback &&callback)
     {
         std::unordered_map<std::string, std::string> para = (const std::unordered_map<std::basic_string<char>, std::basic_string<char>> &) req->getParameters();
         HttpViewData data;
         data.insert("title", "Try Paramaters");
         data.insert("parameters", para);
-        data.insert("footer", readView("footer.csp"));
 
-
-        auto resp = HttpResponse::newHttpViewResponse("ListParameters.csp", data);
+        auto resp = HttpResponse::newHttpViewResponse("home.csp", data);
         callback(resp);
     });
 }

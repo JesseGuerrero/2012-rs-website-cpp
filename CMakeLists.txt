@@ -40,7 +40,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 #endforeach()
 
 
-add_executable(${PROJECT_NAME} main.cc ${VIEWSRC})
+add_executable(${PROJECT_NAME} main.cc ${VIEWSRC} include/JesseGlobals.cpp include/JesseCSPHelpers.cpp)
 target_include_directories(${PROJECT_NAME}
         PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/include

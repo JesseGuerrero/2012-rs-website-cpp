@@ -1,0 +1,25 @@
+<div id="NewsArticles">
+    <div class="Article ArticleCollapsed"><div>
+        <div class="NewsHeaderImage">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/NoImage.webp" alt="" title="">
+            <div></div>
+        </div>
+        <a class="ArticleControl HoverImg ControlMinus">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Minus.webp" alt="Close" title="Close">
+        </a>
+        <a class="ArticleControl HoverImg ControlPlus">
+            <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Plus.webp" alt="Open" title="Open">
+        </a>
+        <div class="CollapsedMask"></div>
+        <img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/Cat_1.webp" alt="Game Updates" title="Game Updates" class="Category">
+        <div class="Title">
+            <a href=""><h4 class="FlatHeader">Some news</h4></a>
+            <br style="clear:both">
+            <span>Jan 1st, 2023</span>
+        </div>
+        <div class="Content">
+            This is a description
+        </div>
+        <a class="HoverImg More" href=""><img src="https://raw.githubusercontent.com/JesseGuerrero/web-files-darkan/master/2012/ReadMore.webp" alt="" title=""></a>
+    </div></div>
+</div>

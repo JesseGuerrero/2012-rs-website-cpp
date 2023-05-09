@@ -1,10 +1,9 @@
-#ifndef JESSE_H
-#define JESSE_H
+//should never be included in a csp file
 #include "HTTPRequest.hpp"
 #include "json.hpp"
 #include <iostream>
-#include <filesystem>
 #include <fstream>
+#include <drogon/drogon.h>
 
 std::string getHTTP(std::string url) {
     try
@@ -28,18 +27,3 @@ std::string getHTTP(std::string url) {
         std::cerr << "Error: " << e.what() << '\n';;
     }
 }
-
-namespace fs = std::filesystem;
-std::string readView(std::string viewName) {
-    fs::path filePath = fs::current_path().parent_path() / ("views/" + viewName);
-
-    std::ifstream indexFile(filePath);
-    if (indexFile.good()) {
-        std::string indexHtml((std::istreambuf_iterator<char>(indexFile)), std::istreambuf_iterator<char>());
-        return indexHtml;
-    }
-
-    return "";
-}
-
-#endif

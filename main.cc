@@ -1,31 +1,24 @@
-#include <drogon/drogon.h>
-#include "controllers/Hello.h"
-#include <iostream>
-#include "routes/index.hpp"
+#include "routes/indexRoutes.hpp"
+#include "JesseGlobals.h"
 
 void reloadCsp()
 {
-    std::string filePath(__FILE__);  // Get the file path of the current file
-    std::string base_dir = filePath.substr(0, filePath.find_last_of("/\\"));
-    std::string arr[] = { base_dir + "/views/ListParameters.csp" };
+    std::string base_dir = viewsPath.string();
+    std::string arr[] = { base_dir + "ListParameters.csp" };
     std::vector<std::string> v(arr, arr + sizeof(arr) / sizeof(arr[0]));
-    std::string arr2[] = { base_dir + "/views/" };
+    std::string arr2[] = { base_dir };
     std::vector<std::string> v2(arr2, arr2 + sizeof(arr2) / sizeof(arr2[0]));
 
-    drogon::app().enableDynamicViewsLoading(v, base_dir + "/views/");
+    drogon::app().enableDynamicViewsLoading(v, base_dir);
     //memories above deallocate
 }
-
 
 int main() {
     reloadCsp();
     drogon::app().addListener("0.0.0.0",3000);
+    drogon::app().setDocumentRoot(documentRootPath.string());
     handleRoutes();
 
     drogon::app().run();
     return 0;
 }
-
-
-
-
